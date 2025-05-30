@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "ef50a543-c60b-45f4-9835-9b34aa9f772b",
+  "alias": "ShepherdPlaybookWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": { "default": "Advanced" },
+      "title": { "default": "ShepherdPlaybook" },
+      "description": { "default": "ShepherdPlaybook description" },
+      "officeFabricIconFontName": "Page",
+      "pageUrl": "index.aspx",
+      "properties": {
+        "description": "ShepherdPlaybook"
+      }
+    }
+  ]
+}

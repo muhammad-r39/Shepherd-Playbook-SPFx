@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "20.15.1",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "shepherd-playbook",
+    "libraryId": "019346c7-fca0-41ac-b802-9df04c77ef81",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ShepherdPlaybook",
+    "solutionShortDescription": "ShepherdPlaybook description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

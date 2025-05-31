@@ -3,9 +3,8 @@ import { NewsCarousel } from "../NewsCarousel";
 import { SPHttpClient } from "@microsoft/sp-http";
 import { BirthdayAnniversary } from "../BirthdayAnniversary";
 import CalendarEvents from "../CalendarEvents/CalendarEvents";
-import { VivaFeed } from "../VivaFeed";
-import { MSGraphClientV3 } from "@microsoft/sp-http";
 import { WebPartContext } from "@microsoft/sp-webpart-base";
+import VivaFeed from "../VivaFeed";
 
 interface IndexPageProps {
   spHttpClient: SPHttpClient;
@@ -13,16 +12,6 @@ interface IndexPageProps {
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ spHttpClient, context }) => {
-  const [graphClient, setGraphClient] = React.useState<MSGraphClientV3 | null>(
-    null
-  );
-
-  React.useEffect(() => {
-    context.msGraphClientFactory
-      .getClient("3")
-      .then((client: MSGraphClientV3) => setGraphClient(client));
-  }, []);
-
   React.useEffect(() => {
     const handleLoad = () => {};
 
@@ -150,7 +139,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ spHttpClient, context }) => {
               </section>
               <section className="shep-social">
                 <h2>ShepSocial</h2>
-                {graphClient && <VivaFeed graphClient={graphClient} />}
+                <VivaFeed />
               </section>
               <section className="events-holidays">
                 <h2>Events & Holidays</h2>

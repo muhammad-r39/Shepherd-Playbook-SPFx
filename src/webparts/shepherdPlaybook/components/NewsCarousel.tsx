@@ -89,7 +89,6 @@ export const NewsCarousel: React.FC<INewsCarouselProps> = ({
         setLoading(false);
       }
     };
-    console.log("ran");
     fetchNewsItems();
   }, [spHttpClient]);
 

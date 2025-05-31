@@ -10,6 +10,14 @@
       {
         "resource": "Microsoft Graph",
         "scope": "User.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+      },
+      {
+        "resource": "Yammer",
+        "scope": "user_impersonation"
       }
     ]
   },
